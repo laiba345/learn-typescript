@@ -25,7 +25,7 @@ function mul(num1: number, num2: number) {
 }
 calc(mul)
 
-// 3.使用匿名函数
+// 3.使用匿名函数 ～ 直接写function，不写名字，为匿名函数
 calc(function(num1, num2) {
   return num1 - num2
 })

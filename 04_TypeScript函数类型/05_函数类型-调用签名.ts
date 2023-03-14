@@ -5,7 +5,8 @@ type BarType = (num1: number) => number
 interface IBar {
   name: string
   age: number
-  // 函数可以调用: 函数调用签名
+  // 函数可以调用: 函数调用签名 冒号
+  // (参数列表): number 
   (num1: number): number
 }
 

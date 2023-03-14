@@ -22,6 +22,6 @@ function getLength(arg: { length: number }) {
 }
 
 
-getLength("aaaaa")
-getLength(["abc", "cba", "nba"])
-getLength({ name: "why", length: 100 })
+// getLength("aaaaa")
+// getLength(["abc", "cba", "nba"])
+// getLength({ name: "why", length: 100 })

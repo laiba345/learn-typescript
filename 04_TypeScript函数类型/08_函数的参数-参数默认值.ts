@@ -6,7 +6,7 @@ function foo(x: number, y = 100) {
 }
 
 foo(10)
-foo(10, undefined)
+foo(10, undefined) // 有默认值的参数, 是可以接收一个undefined的值
 foo(10, 55)
 
 export {}

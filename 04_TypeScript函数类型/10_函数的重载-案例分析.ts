@@ -42,6 +42,6 @@ add(10, 20)
 add("aaa", "bbb")
 // 通用函数不能被调用
 // add({name: "why"}, "aaa")
-// add("aaa", 111)
+// add("aaa", 111) 报错
 
 export {}

@@ -1,3 +1,4 @@
+// 理解
 class Person {
 }
 
