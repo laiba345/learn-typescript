@@ -8,7 +8,7 @@ function printID(id: number | string) {
 }
 
 
-// 2.===/!==: 方向的类型判断
+// 2.===/!==: 方向的类型判断（一般用于判断字面量类型）
 type Direction = "left" | "right" | "up" | "down"
 function switchDirection(direction: Direction) {
   if (direction === "left") {
@@ -25,7 +25,7 @@ function switchDirection(direction: Direction) {
 
 // 3. instanceof: 传入一个日期, 打印日期
 function printDate(date: string | Date) {
-  if (date instanceof Date) {
+  if (date instanceof Date) { // 实例
     console.log(date.getTime())
   } else {
     console.log(date)
@@ -34,7 +34,7 @@ function printDate(date: string | Date) {
   // if (typeof date === "string") {
   //   console.log(date)
   // } else {
-  //   console.log(date.getTime())
+  //   console.log(date.getTime()) // 有这个方法
   // }
 }
 

@@ -12,12 +12,12 @@ const info: IPerson = {
   age: 18
 }
 
-// 访问属性: 可选链: ?.
+// 访问属性: 可选链: ?.  ES6中其实也有这种用法
 console.log(info.friend?.name)
 
 // 属性赋值:
 // 解决方案一: 类型缩小
-if (info.friend) {
+if (info.friend) { // 
   info.friend.name = "kobe"
 }
 

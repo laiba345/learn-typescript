@@ -5,7 +5,7 @@
 //   imgEl.alt = "yyy"
 // }
 
-// 使用类型断言
+// 使用类型断言（确定某个类是某一个类型的时候）
 const imgEl = document.querySelector(".img") as HTMLImageElement
 imgEl.src = "xxx"
 imgEl.alt = "yyy"
@@ -17,9 +17,8 @@ const age: number = 18
 // const age2 = age as string
 
 // TS类型检测来说是正确的, 但是这个代码本身不太正确
-// const age3 = age as any
-// const age4 = age3 as string
+// const age3 = age as any  // 断言成不太具体的类型
+// const age4 = age3 as string // 断言成具体的类型
 // console.log(age4.split(" "))
-
 
 export {}

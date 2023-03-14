@@ -1,5 +1,5 @@
 // 1.字面量类型的基本上
-const name: "why" = "why"
+const name: "why" = "why" // const 表示这种类型不可变，类型就是“why”
 let age: 18 = 18
 
 // 2.将多个字面量类型联合起来 |
@@ -19,7 +19,7 @@ request("http://codercba.com/api/aaa", "post")
 //   method: "post"
 // }
 // 下面的做法是错误: info.method获取的是string类型
-// request(info.url, info.method)
+// request(info.url, info.method)  // 因为info
 
 // 解决方案一: info.method进行类型断言
 // request(info.url, info.method as "post")
@@ -33,7 +33,7 @@ const info2 = {
   url: "xxxx",
   method: "post"
 } as const
-// xxx 本身就是一个string
+// xxx 本身就是一个string 
 request(info2.url, info2.method)
 
 export {}
