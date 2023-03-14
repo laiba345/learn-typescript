@@ -1,5 +1,6 @@
 class Person {
-  // 成员属性: 声明成员属性
+  // 成员属性: 声明成员属性（JS中是不要求的）
+  // TS中需要声明
   name: string
   age: number
 
@@ -23,5 +24,5 @@ const p2 = new Person("kobe", 30)
 
 console.log(p1.name, p2.age)
 
-export {}
+export {  }
 

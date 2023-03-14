@@ -1,6 +1,6 @@
 // public
 // private
-// protected
+// protected 受保护的
 
 class Person {
   protected name: string
@@ -25,12 +25,14 @@ const p = new Person("why", 18)
 // 子类中是否可以访问
 class Student extends Person {
   constructor(name: string, age: number) {
-    super(name, age)
+    super(name, age) // 继承的写法
   }
 
   studying() {
-    console.log("在学习", this.name)
+    console.log("在学习", this.name) // 子类可以访问
   }
 }
 
 const stu = new Student("why", 18)
+
+export {  }
