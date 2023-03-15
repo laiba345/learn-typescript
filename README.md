@@ -17,3 +17,6 @@ tsc --version
 5. 可以使用TS封装一些高级类型，包括框架当中某些特殊的类型（pinia/vuex）
 6. 学会使用TS提供的各种内置工具（ThisType/ReturnType/）
 7. 真正TS融会贯通，看TS源码（TS开发者）
+
+
+## 映射累心（开发中极少使用 187-189）
