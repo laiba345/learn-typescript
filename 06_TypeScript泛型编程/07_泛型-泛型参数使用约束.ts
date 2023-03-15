@@ -4,7 +4,7 @@ interface IKun {
   age: number
 }
 
-type IKunKeys = keyof IKun // "name"|"age"
+type IKunKeys = keyof IKun // "name"|"age"（所有key加在一起的联合类型）
 
 function getObjectProperty<O, K extends keyof O>(obj: O, key: K){
   return obj[key]

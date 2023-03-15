@@ -1,5 +1,5 @@
 interface ILength {
-  length: number
+  length: number // 确定arg一一定有length属性
 }
 
 // 1.getLength没有必要用泛型

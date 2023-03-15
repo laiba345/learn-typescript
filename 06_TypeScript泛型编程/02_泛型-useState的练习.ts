@@ -8,9 +8,9 @@ function useState<Type>(initialState: Type): [Type, (newState: Type) => void] {
   return [state, setState]
 }
 
-// 初始化count
+// 初始化count 类型推断，可以省略
 const [count, setCount] = useState(100)
 const [message, setMessage] = useState("Hello World")
-const [banners, setBanners] = useState<any[]>([])
+const [banners, setBanners] = useState<any[]>([]) // 没法推断（保留即可）
 
 export {}

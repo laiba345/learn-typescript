@@ -17,7 +17,7 @@ const res1 = bar<number>(123)
 const res2 = bar<string>("abc")
 const res3 = bar<{name: string}>({ name: "why" })
 
-// 2.2. 省略的写法
+// 2.2. 省略的写法 => 进行类型推导
 const res4 = bar("aaaaaaaaa")
 const res5 = bar(11111111)
 

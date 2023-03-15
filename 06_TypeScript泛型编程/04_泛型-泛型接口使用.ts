@@ -12,7 +12,7 @@ const kunkun: IKun<string> = {
 }
 
 const ikun2: IKun<number> = {
-  name: 123,
+  name: 123, // 只能传入数字
   age: 20,
   slogan: 666
 }
