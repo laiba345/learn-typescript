@@ -7,6 +7,7 @@ interface IBar {
   age: number
   // 函数可以调用: 函数调用签名 冒号
   // (参数列表): number 
+  // 描述函数作为对象可以被调用
   (num1: number): number
 }
 

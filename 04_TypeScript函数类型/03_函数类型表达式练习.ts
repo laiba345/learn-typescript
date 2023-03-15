@@ -1,6 +1,6 @@
 type CalcType = (num1: number, num2: number) => number
 
-// 1.函数的定义
+// 1.函数的定义 CalcType是函数类型
 function calc(calcFn: CalcType) {
   const num1 = 10
   const num2 = 20

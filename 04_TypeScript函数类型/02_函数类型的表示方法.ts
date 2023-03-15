@@ -2,6 +2,7 @@
 // 格式: (参数列表) => 返回值
 // 参数名称num1等不能省略
 type BarType = (num1: number) => number
+
 const bar: BarType = (arg: number): number => {
   return 123
 }
