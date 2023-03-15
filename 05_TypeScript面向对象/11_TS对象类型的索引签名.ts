@@ -1,6 +1,6 @@
 interface ICollection {
   // 索引签名
-  [index: string]: number
+  [index: string]: number // 后面的number是返回的类型
 
   length: number
 }

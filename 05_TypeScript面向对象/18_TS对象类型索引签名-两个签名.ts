@@ -1,7 +1,7 @@
 interface IIndexType {
   // 两个索引类型的写法
   [index: number]: string
-  [key: string]: any
+  [key: string]: any // 更加宽泛的类型放在下面
 
   // 要求一:下面的写法不允许: 数字类型索引的类型, 必须是字符串类型索引的类型的 子类型
   // 结论: 数字类型必须是比如字符串类型更加确定的类型(需要是字符串类型的子类型)

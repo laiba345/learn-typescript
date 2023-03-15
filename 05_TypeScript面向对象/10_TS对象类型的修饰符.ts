@@ -1,4 +1,4 @@
-// 定义对象类型
+// 定义对象类型～使用type定义
 type IPerson = {
   // 属性?: 可选的属性
   name?: string

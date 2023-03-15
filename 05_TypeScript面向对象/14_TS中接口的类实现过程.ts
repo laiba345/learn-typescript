@@ -18,7 +18,8 @@ const ikun: IKun = {
   playBasketball: function() {}
 }
 
-// 作用: 接口被类实现
+// 作用: 接口被类实现 ～ 列是可以继承某一个接口的
+// 一个类可以实现多个接口，但是接口里面的方法都要实现
 class Person implements IKun, IRun {
   name: string
   age: number
@@ -39,3 +40,5 @@ const ikun4 = new Person()
 console.log(ikun2.name, ikun2.age, ikun2.slogan)
 ikun2.playBasketball()
 ikun2.running()
+
+export {  }

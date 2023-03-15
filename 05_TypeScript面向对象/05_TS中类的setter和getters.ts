@@ -21,7 +21,7 @@ class Person {
     return this._name
   }
 
-
+  // 进行一个简单的拦截判断操作
   set age(newValue: number) {
     if (newValue >= 0 && newValue < 200) {
       this._age = newValue

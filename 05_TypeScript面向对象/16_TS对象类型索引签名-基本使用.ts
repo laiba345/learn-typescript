@@ -34,6 +34,7 @@ interface ICollection {
   length: number
 }
 
+// 为了编写一些通用的接口用的
 function printCollection(collection: ICollection) {
   for (let i = 0; i < collection.length; i++) {
     const item = collection[i]

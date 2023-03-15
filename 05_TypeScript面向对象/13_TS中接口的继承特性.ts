@@ -18,4 +18,4 @@ const ikun: IKun = {
   slogan: "你干嘛, 哎呦"
 }
 
-export {}
+export {  }

@@ -34,6 +34,6 @@ const obj2 = {
   height: 1.88
 }
 
-const p: IPerson = obj2
+const p: IPerson = obj2 // obj2已经不新鲜了
 
 export {}
