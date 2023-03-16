@@ -1,14 +1,15 @@
 import { price, date } from "./utils/format";
 import { sum } from "./utils/math";
 
-// 导入的是类型, 推荐在类型的前面加上type关键
+// 导入的是类型, 推荐在类型的前面加上type关键 
+// 直接在外面添加 ～ 倒入多种类型的话
 // import type { IDType, IPerson } from "./utils/type"
 
 console.log(sum(20, 30))
 
 // type IDType = number | string
 
-const id1: IDType = 111
+// const id1: IDType = 111
 const p: IPerson = { name: "why", age: 18 }
 // tsconfig => includes
 
@@ -22,4 +23,6 @@ date.format("22222")
 // document.querySelector()
 
 document
+
+export {  }
 
