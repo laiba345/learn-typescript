@@ -1,6 +1,7 @@
 import { BASE_URL, TIME_OUT } from "./config";
 import HYRequest from "./request";
 
+// @ 在出口这里，传入的东西就很灵活
 const hyRequest = new HYRequest({
   baseURL: BASE_URL,
   timeout: TIME_OUT

@@ -1,4 +1,5 @@
 import axios from "axios"
+// 使用类型的相关的写法
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios"
 import type { HYRequestConfig } from "./type"
 
@@ -15,18 +16,23 @@ import type { HYRequestConfig } from "./type"
  */
 
 class HYRequest {
-  instance: AxiosInstance
+  // @ts中为每个属性成员指定相应的类型
+  instance: AxiosInstance 
 
   // request实例 => axios的实例
+  // @ config 直接传入一个config；因为要传入的内容太多了
+  // 
   constructor(config: HYRequestConfig) {
     this.instance = axios.create(config)
 
     // 每个instance实例都添加拦截器
     this.instance.interceptors.request.use(config => {
+      // @全局请求成功的拦截
       // loading/token
       console.log("全局请求成功的拦截")
       return config
     }, err => {
+      // @全局请求失败的拦截
       console.log("全局请求失败的拦截")
       return err
     })
@@ -54,6 +60,7 @@ class HYRequest {
   request<T = any>(config: HYRequestConfig<T>) {
     // 单次请求的成功拦截处理
     if (config.interceptors?.requestSuccessFn) {
+      // 拿到新的config
       config = config.interceptors.requestSuccessFn(config)
     }
 
